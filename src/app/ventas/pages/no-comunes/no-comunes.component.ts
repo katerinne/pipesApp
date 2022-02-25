@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {ButtonModule} from 'primeng/button';
+
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
@@ -23,6 +25,16 @@ export class NoComunesComponent{
     '=1': 'tenemos un cliente esperando',
     '=2': 'tenemos 2 clientes esperando',
     'other': 'tenemos # clientes esperando'
+  }
+
+  cambiarPersona(){
+    this.nombre = 'Fernando';
+    this.genero = 'masculino';
+  }
+
+  borrarPersona(){
+    //this.clientes.splice(0,1);
+    this.clientes.pop();
   }
 
 }
