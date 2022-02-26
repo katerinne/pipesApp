@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import {ButtonModule} from 'primeng/button';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -59,5 +59,14 @@ export class NoComunesComponent{
       vuela: true
     },
   ]
+
+  //Async Pipe
+  miObservable = interval(1000); //0,1,2,3,4,5,6,7
+
+  valorPromesa = new Promise(( resolve, reject ) =>{
+    setTimeout(()=>{
+      resolve('Tenemos data de promesa');
+    }, 3500);
+  });
 
 }
