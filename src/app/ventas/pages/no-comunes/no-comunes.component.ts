@@ -44,4 +44,20 @@ export class NoComunesComponent{
     direccion: 'España'
   }
 
+  //Json Pipe
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'La mujer maravilla',
+      vuela: true
+    },
+  ]
+
 }
