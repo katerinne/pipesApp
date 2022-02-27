@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MayusculasPipe } from '../../pipes/masyusculas.pipe';
 
 @Component({
   selector: 'app-ordenar',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class OrdenarComponent implements OnInit {
+
+  enMayuscula: boolean = false;
+
+  cambiar(){
+    this.enMayuscula=!this.enMayuscula;
+  }
 
   constructor() { }
 
