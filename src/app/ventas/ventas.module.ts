@@ -7,7 +7,10 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+
 import { MayusculasPipe } from './pipes/masyusculas.pipe';
+import { VuelaPipe } from './pipes/vuela.pipes';
+
 
 
 
@@ -18,7 +21,8 @@ import { MayusculasPipe } from './pipes/masyusculas.pipe';
     NoComunesComponent,
     BasicosComponent,
     OrdenarComponent,
-    MayusculasPipe
+    MayusculasPipe,
+    VuelaPipe
   ],
   exports:[
     NumerosComponent,
